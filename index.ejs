@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find-weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./images.jpg">
+        <div class="search-box">
+            <form action="/" method="post">
+                <input type="text" name="city" id="city" placeholder="Search for a city...." autocomplete="off">
+                <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3c3c3c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+            </form>
+        </div>
+
+        <div class="data">
+            <p class="place-info"><%= sendData.location %></p>
+            <p class="temp"><%= sendData.temp%></p>
+            <p class="desc"><%= sendData.desc%></p>
+        </div>
+
+        <div class="view-more-box">
+            <p class="view">View More</p>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+
+        <div class="info-card">
+            <div class="flex"><p class="feel"><%= sendData.feel%></p></div>
+            <div class="flex"><p class="humidity"><%= sendData.humidity%></p></div>
+            <div class="flex"><p class="windSpeed"><%= sendData.speed%></p></div>
+        </div>
+
+        <div class="date-time">
+            <p class="time">Time</p>
+            <p class="date">Day and Date</p>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
