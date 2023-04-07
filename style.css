@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container img{
+    width: 100%;
+    height: 100vh;
+}
+
+#city{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #f1f1f185;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3C3C3C;
+}
+
+#city::placeholder{
+    font-size: 15px;
+    font-weight: 700;
+    color: #3C3C3C;
+}
+
+svg{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    cursor: pointer;
+}
+
+.date-time{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.time, .date{
+    font-size: 35px;
+    font-size: 400;
+    color: #fff;
+}
+
+.data{
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.place-info, .temp, .disc{
+    font-size: 75px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 80px;
+}
+
+.disc{
+    width: 80vw;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.view-more-box{
+    width: 10%;
+    height: 300px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.svg{
+    width: 22px;
+    position: absolute;
+    top: 136px;
+    right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.info-card{
+    width: 300px;
+    height: 150px;
+    background: #f1f1f175;
+    position: absolute;
+    left: 50.4%;
+    transform: translateX(-50%);
+    bottom: -350px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-left: 30px;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.flex{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-card p{
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.speed{
+    position: relative;
+    left: 20px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.visible{
+    opacity: 1;
+    bottom: 50px;
+    transition: 0.5s;
+}
